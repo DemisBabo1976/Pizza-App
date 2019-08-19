@@ -419,4 +419,8 @@ $(function () {
     $(function () {
         $.scrollify.move('#sum-order');
     });
+    $("#go").click(function () {
+        let location = $("input#location").val();
+        console.log(location);
+    });
 });

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145844223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145844223-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pizza App</title>
@@ -176,11 +186,11 @@
     <div class="cdata-overlay">
         <div class="customerdata row">
             <div class="col-sm-3"></div>
-            <form action="" class="form-group col-sm-6 data">
-                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+            <form action="" class="form-group col-sm-6 data" id="data">
+                <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                <button class="btn bg-info text-center d-block mx-auto go"  id="go" type="submit">Make Delivery</button>
             </form>
 
             <div class="col-sm-3"></div>
@@ -225,5 +235,6 @@
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
+<script src="js/check.js"></script>
 <script src="js/scrollify.js"></script>
 </html>
